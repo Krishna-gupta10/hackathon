@@ -31,7 +31,7 @@ export default function Header() {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                            <img className="mx-3" src="https://info.triadtechnologies.com/hs-fs/hubfs/raw_assets/public/TriadTechnologies_May2022/images/header-logo.png?width=255&height=153&name=header-logo.png" />
+                            <a href="/"><img className="mx-3" src="https://info.triadtechnologies.com/hs-fs/hubfs/raw_assets/public/TriadTechnologies_May2022/images/header-logo.png?width=255&height=153&name=header-logo.png" /></a>
                             <ul className="navbar-nav mb-2 mb-lg-0" style={{ height: '100px', padding: '25px 15px' }}>
                                 <li className="nav-item dropdown mx-4">
                                     <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
