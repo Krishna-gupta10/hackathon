@@ -121,9 +121,9 @@ export default function Header() {
                         </button>
                         <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                             <form className="d-flex">
-                                <div className="input-group" style={{ backgroundColor: 'white', padding: '20px 150px' }}>
+                                <div className="input-group" style={{ backgroundColor: 'white', padding: '20px 10px' }}>
                                     <input className="form-control mx-2" type="search" placeholder="Look for something..." aria-label="Search" style={{ border: 'none', width: '60%', outline: 'none', boxShadow: 'none' }} />
-                                    <button className="btn mx-1 search-btn" type="submit">
+                                    <button className="btn mx-2 search-btn" type="submit">
                                         <i className="fa-solid fa-magnifying-glass"></i> SEARCH
                                     </button>
                                 </div>
