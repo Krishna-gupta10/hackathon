@@ -40,7 +40,7 @@ export default function Header() {
                                 <a className="nav-link mx-3 hover-box" aria-current="page" href="/">MANUFACTURERS</a>
                                 <a className="nav-link mx-3 hover-box" href="/">CAREERS</a>
                                 <a className="nav-link mx-3 hover-box" href="/">ABOUT US</a>
-                                <a className="nav-link mx-3 hover-box" href="/">LOCATIONS</a>
+                                <a className="nav-link mx-3 hover-box" href="/Locations">LOCATIONS</a>
                                 <a className="nav-link mx-3 hover-box" href="/contact-us">CONTACT US</a>
                             </div>
                         </div>

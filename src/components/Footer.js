@@ -32,6 +32,7 @@ const Footer = () => {
             <a data-mdb-ripple-init className="btn btn-outline btn-floating m-1" href="#!" role="button"><i className="fab fa-github"></i></a>
           </section>
 
+
           <section className="">
 
             <div className="row" style={{ justifyContent: 'center' }}>

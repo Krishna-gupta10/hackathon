@@ -1,13 +1,7 @@
-
 a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: orange;
-}
-
-/* Footer container styles */
 footer {
     background-color: #ffffff;
     /* White background */
@@ -43,6 +37,7 @@ footer {
 .row {
     justify-content: center;
 }
+
 .quote-btn {
     display: flex;
     align-items: center;
