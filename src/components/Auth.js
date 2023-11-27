@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import TextInput from "./TextInput";
-import CustomButton from "./CustomButton";
+import { Grid, Typography, Button } from '@material-ui/core';
 
+import './css/Auth.css'
 function Auth() {
  const [signup, setSignup] = useState(true);
  const [email, setEmail] = useState('');
@@ -16,107 +16,102 @@ function Auth() {
 
  return (
    <>
-   
-     <div className="inset-0  bg-opacity-75">
-       <div className="flex min-h-full   items-center justify-center p-4 text-center">
-         <div className="  w-full max-w-md  transform overflow-hidden  rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all ">
-           <h3 className="text-xl font-semibold lwading-6 text-gray-900">
-             {signup ? "Create Account" : "Account Sign In"}
-           </h3>
-
-         
-
-           <form
-             className="w-full flex flex-col gap-5"
-             onSubmit={handleSubmit()}
-           >
-             <TextInput
-               name="email"
-               label="Email Address"
-               placeholder="email@example.com"
-               type="email"
-               
-             />
-
-             {signup && (
-               <div className="w-full flex gap-1 md:gap-2">
-                 
-
-               {(
-                       <div className="w-full grid grid-cols-2 gap-2 ">
-                   <TextInput
-                     name="firstName"
-                     label="First Name"
-                     placeholder="eg. James"
-                     type="text"
-                   
-                
-                   />
-
-                   <TextInput
-                     name="lastName"
-                     label="Last Name"
-                     placeholder="Wagonner"
-                     type="text"
-                    
-                   
-                   />
-                 </div>
-               )}
-
-              
-                 
+      <h2 class="heading">Create New Customer Account</h2>
+      <div class="container">
+         <div class="signup-form">
+            <form action="/examples/actions/confirmation.php" method="post">
+    
+               <h5>Personal Information</h5>
+               <hr/>
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"/></div>
+                     <div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"/></div>
+                  </div>        	
                </div>
-
-             )}
-
-             <div className="w-full grid grid-cols-2 gap-1 md:gap-2">
-               <TextInput                                                                                                                                
-                 name="password"
-                 label="Password"
-                 placeholder="Password"
-                 type="password"
+               <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked/>
+                  <label class="form-check-label" for="flexCheckChecked">
+                  Sign Up for Newsletter
+                  </label>
+               </div>
+               <br/>
+               <h5>Address Information</h5>
+               <hr/>
+               <div class="col"><input type="text" class="form-control" name="companny" placeholder="Company Name" required="required"/></div>
+               <br/>
+               <input
+                     type="tel"
+                     name="telphone"
+                     placeholder="888 888 8888"
+                     pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                     maxlength="10"
+                     title="Ten digits code"
+                     required
+                     />
+                  <label class="telephone">
+                     Eg : 081 222 2224
+                  </label>
                
-                 
-               />
-
-               {signup && (
-                 <TextInput
-                   label="Confirm Password"
-                   placeholder="Password"
-                   type="password"
-                  
-                  
-                 />
-               )}
-             </div>
-
-             {/* ... Other form inputs */}
-
-            
-
-             <div className="mt-2">
-               <CustomButton
-                 type="submit"
-                 containerStyles={`inline-flex justify-center rounded-md bg-blue-600 px-8 py-2 text-sm font-medium text-white outline-none hover:bg-blue-800`}
-                 title={signup ? "Create Account" : "Login Account"}
-               />
-             </div>
-           </form>
-
-           <div className="mt-4">
-             <p className="text-sm text-gray-700">
-               {signup
-                 ? "Already have an account?"
-                 : "Do not have an account"}
-
+               <br/>
+               <br/>
+               <div class="form-floating mb-3">
+               <input type="email" class="form-control" id="floatingInput" placeholder="Street Address"/>
+               <label for="floatingInput">Street Address</label>
+               </div>
+               <br/>
+               <div class="form-floating mb-3">
+               <input type="email" class="form-control" id="floatingInput" placeholder="City"/>
+               <label for="floatingInput">City</label>
+               </div>
+               <br/>
                
-             </p>
-           </div>
+               <select class="form-select" aria-label="Default select example">
+               <option selected>State/Province</option>
+               <option value="1">Maharashtra</option>
+               <option value="2">Jammu</option>
+               <option value="3">Gujrat</option>
+               </select>
+               <br/>
+               <br/>
+               <div class="form-floating mb-3">
+               <input type="email" class="form-control" id="floatingInput" placeholder="Zip/Postal Code"/>
+               <label for="floatingInput">Zip/Postal Code</label>
+               </div>
+               <br/>
+              
+               <select class="form-select" aria-label="Default select example">
+               <option selected>Country</option>
+               <option value="1">India</option>
+               <option value="2">China</option>
+               <option value="3">Nepal</option>
+               <option value="3">US</option>
+               <option value="3">UK</option>
+               </select>
+               <br/>
+               <br/>
+               <h5>Sign-in Information</h5>
+               <hr/>
+               <div class="form-group">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required="required"/>
+               </div>
+               <div class="form-group">
+                     <input type="password" class="form-control" name="password" placeholder="Password" required="required"/>
+               </div>
+               <div class="form-group">
+                     <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required"/>
+               </div>     
+                  
+               <div class="form-group">
+                  <label class="form-check-label"><input type="checkbox" required="required"/> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+               </div>
+               <div class="form-group">
+                     <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+               </div>
+            </form>
+            <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
          </div>
-       </div>
-     </div>
-   
+</div>
  </>
  );
 }
