@@ -1,0 +1,50 @@
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: orange;
+}
+
+/* Footer container styles */
+footer {
+    background-color: #ffffff;
+    /* White background */
+    color: #e16e26;
+    /* Orange text color */
+    padding-top: 30px;
+    /* Adjust as needed */
+}
+
+/* Request a Quote button styles */
+.quote-btn {
+    background-color: #e16e26;
+    /* Orange background for the button */
+    color: #ffffff;
+    /* White text color for the button */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    border-radius: 5px;
+    /* Optional: Adds rounded corners to the button */
+}
+
+/* Social media buttons styles */
+.btn-outline {
+    color: #e16e26;
+    border-color: #e16e26;
+}
+
+.btn-outline:hover {
+    background-color: #e16e26;
+    color: #ffffff;
+}
+
+.row {
+    justify-content: center;
+}
+.quote-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
