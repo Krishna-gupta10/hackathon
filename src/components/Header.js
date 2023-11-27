@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/Header.css'
+import { useState } from 'react';
 
 export default function Header() {
     return (
@@ -63,9 +64,26 @@ export default function Header() {
                                         <li><a className="dropdown-item" href="/">Something else here</a></li>
                                     </ul>
                                 </li>
-                                <a className="nav-link mx-4" href="/">SIGN IN</a>
-                                <a className="nav-link mx-4" href="/">CART</a>
+                                <a className="nav-link mx-4" href="/"><i className="fa-solid fa-user"></i> SIGN UP/SIGN IN</a>
+                                <a className="nav-link mx-4" href="/"><i className="fa-solid fa-cart-shopping"></i> CART</a>
                             </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div>
+                <nav className="navbar navbar-expand-lg bg-white">
+                    <div className="container-fluid">
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                                <button class="btn btn-outline-success" type="submit">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            <a className="nav-link mx-4" href="/">REQUEST A QUOTE</a>
                         </div>
                     </div>
                 </nav>
