@@ -2,7 +2,7 @@
     margin-left: 100px;
     padding: 10px;
 }
-.container {
+/* .container {
 	color: #fff;
 	background: #63738a;
 	font-family: 'Roboto', sans-serif;
@@ -12,7 +12,7 @@
 	height: 40px;
 	box-shadow: none;
 	color: #969fa4;
-}
+} */
 .form-control:focus {
 	border-color: #5cb85c;
 }
