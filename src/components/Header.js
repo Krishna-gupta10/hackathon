@@ -128,7 +128,7 @@ export default function Header() {
                                     </button>
                                 </div>
                             </form>
-                            <a className="nav-link mx-3 quote-btn" style={{ padding: '15px 15px' }} href="/">Request a Quote</a>
+                            <a className="nav-link mx-3 quote-btn" style={{ padding: '15px 15px' }} href="/requestQuote">Request a Quote</a>
                             <a className="nav-link quote-btn" style={{ padding: '15px 15px' }} href="/">Bulk Order</a>
                         </div>
                     </div>
