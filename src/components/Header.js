@@ -1,8 +1,32 @@
 import React from 'react';
 import './css/Header.css'
-import { useState } from 'react';
 
 export default function Header() {
+    const currentPath = window.location.pathname;
+
+    const generateBreadcrumb = () => {
+        const pathSegments = currentPath.split('/').filter((segment) => segment !== '');
+        const breadcrumbItems = pathSegments.map((segment, index) => (
+            <li key={index} className="breadcrumb-item">
+                {index === pathSegments.length - 1 ? (
+                    <span>{segment}</span>
+                ) : (
+                    <a href={`/${pathSegments.slice(0, index + 1).join('/')}`}>{segment}</a>
+                )}
+            </li>
+        ));
+
+        return (
+            <nav style={{ '--bs-breadcrumb-divider': 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\'%3E%3Cpath d=\'M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z\' fill=\'%236c757d\'/%3E%3C/svg%3E")' }} aria-label="breadcrumb">
+                <ol className="breadcrumb mx-3">
+                    <li className="breadcrumb-item"><a href="/">Home</a></li>
+                    {breadcrumbItems}
+                </ol>
+            </nav>
+        );
+    };
+
+
     return (
         <>
             <div>
@@ -17,7 +41,7 @@ export default function Header() {
                                 <a className="nav-link mx-3 hover-box" href="/">CAREERS</a>
                                 <a className="nav-link mx-3 hover-box" href="/">ABOUT US</a>
                                 <a className="nav-link mx-3 hover-box" href="/">LOCATIONS</a>
-                                <a className="nav-link mx-3 hover-box" href="/">CONTACT US</a>
+                                <a className="nav-link mx-3 hover-box" href="/contact-us">CONTACT US</a>
                             </div>
                         </div>
                     </div>
@@ -75,11 +99,11 @@ export default function Header() {
                                 </li>
                                 <li className="nav-item dropdown mx-4">
                                     <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i className="fa-solid fa-user"></i> SIGN UP/SIGN IN
+                                        <i className="fa-solid fa-user"></i> SIGN UP/LOG IN
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="/auth">New Customer</a></li>
-                                        <li><a className="dropdown-item" href="/auth">Sign in</a></li>
+                                        <li><a className="dropdown-item" href="/Signup">New Customer</a></li>
+                                        <li><a className="dropdown-item" href="/Login">Login</a></li>
                                     </ul>
                                 </li>
                                 <a className="nav-link mx-4" href="/"><i className="fa-solid fa-cart-shopping"></i> CART</a>
@@ -111,7 +135,7 @@ export default function Header() {
                 </nav>
             </div>
 
-
+            {generateBreadcrumb()}
         </>
     );
 }
