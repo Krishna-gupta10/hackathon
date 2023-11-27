@@ -13,6 +13,18 @@
 	box-shadow: none;
 	color: #969fa4;
 } */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.container1{
+    
+   
+}
+.container2{
+  
+}
 .form-control:focus {
 	border-color: #5cb85c;
 }
