@@ -38,9 +38,10 @@ export default function Header() {
                                         PRODUCTS
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="/">Action</a></li>
-                                        <li><a className="dropdown-item" href="/">Another action</a></li>
-                                        <li><a className="dropdown-item" href="/">Something else here</a></li>
+                                        <li><a className="dropdown-item" href="/">Chemical Hose</a></li>
+                                        <li><a className="dropdown-item" href="/">Crimpers</a></li>
+                                        <li><a className="dropdown-item" href="/">Hose and Fittings</a></li>
+                                        <li><a className="dropdown-item" href="/">Piping Systems</a></li>
                                     </ul>
                                 </li>
 
@@ -49,9 +50,15 @@ export default function Header() {
                                         SERVICES
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="/">Action</a></li>
-                                        <li><a className="dropdown-item" href="/">Another action</a></li>
-                                        <li><a className="dropdown-item" href="/">Something else here</a></li>
+                                        <li><a className="dropdown-item" href="/">Automation Testing</a></li>
+                                        <li><a className="dropdown-item" href="/">Engineered Systems</a></li>
+                                        <li><a className="dropdown-item" href="/">Kitting & Sub-Assemblies</a></li>
+                                        <li><a className="dropdown-item" href="/">Mobile Services</a></li>
+                                        <li><a className="dropdown-item" href="/">ParkerStores</a></li>
+                                        <li><a className="dropdown-item" href="/">Seal Kits & Custom Packaging</a></li>
+                                        <li><a className="dropdown-item" href="/">Service & Repair</a></li>
+                                        <li><a className="dropdown-item" href="/">T-Slot Aluminium Extrusions</a></li>
+                                        <li><a className="dropdown-item" href="/">Vendor Managed Inventory</a></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item dropdown mx-4">
@@ -59,12 +66,14 @@ export default function Header() {
                                         RESOURCES
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="/">Action</a></li>
-                                        <li><a className="dropdown-item" href="/">Another action</a></li>
-                                        <li><a className="dropdown-item" href="/">Something else here</a></li>
+                                        <li><a className="dropdown-item" href="/">Line Card</a></li>
+                                        <li><a className="dropdown-item" href="/">Blogs</a></li>
+                                        <li><a className="dropdown-item" href="/">Catalogs and Literature</a></li>
+                                        <li><a className="dropdown-item" href="/">Training Classes</a></li>
+                                        <li><a className="dropdown-item" href="/">Markets & Products</a></li>
                                     </ul>
                                 </li>
-                                <a className="nav-link mx-4" href="/"><i className="fa-solid fa-user"></i> SIGN UP/SIGN IN</a>
+                                <a className="nav-link mx-4" href="/auth"><i className="fa-solid fa-user"></i> SIGN UP/SIGN IN</a>
                                 <a className="nav-link mx-4" href="/"><i className="fa-solid fa-cart-shopping"></i> CART</a>
                             </ul>
                         </div>
@@ -87,7 +96,8 @@ export default function Header() {
                                     </button>
                                 </div>
                             </form>
-                            <a className="nav-link mx-4 quote-btn" style={{padding: '15px 15px'}} href="/">REQUEST A QUOTE</a>
+                            <a className="nav-link mx-3 quote-btn" style={{ padding: '15px 15px' }} href="/">REQUEST A QUOTE</a>
+                            <a className="nav-link quote-btn" style={{ padding: '15px 15px' }} href="/">BULK ORDER</a>
                         </div>
                     </div>
                 </nav>

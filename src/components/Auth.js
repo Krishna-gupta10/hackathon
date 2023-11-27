@@ -9,13 +9,9 @@ function Auth() {
  const [loginError, setLoginError] = useState('');
 
  const handleSubmit = (e) => {
-    e.preventDefault();
-    // add your frontend logic here
  };
 
  const handleLogin = (e) => {
-    e.preventDefault();
-    // add your frontend logic here
  };
 
  return (

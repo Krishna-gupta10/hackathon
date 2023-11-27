@@ -25,3 +25,13 @@ img {
     color: #e16e26;
     outline: 1px solid#e16e26;
 }
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item.dropdown:hover .nav-link {
+    color: #e16e26;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu a:hover {
+    background-color: #e16e26;
+    color: white;
+}
