@@ -73,7 +73,15 @@ export default function Header() {
                                         <li><a className="dropdown-item" href="/">Markets & Products</a></li>
                                     </ul>
                                 </li>
-                                <a className="nav-link mx-4" href="/auth"><i className="fa-solid fa-user"></i> SIGN UP/SIGN IN</a>
+                                <li className="nav-item dropdown mx-4">
+                                    <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i className="fa-solid fa-user"></i> SIGN UP/SIGN IN
+                                    </a>
+                                    <ul className="dropdown-menu">
+                                        <li><a className="dropdown-item" href="/auth">New Customer</a></li>
+                                        <li><a className="dropdown-item" href="/auth">Sign in</a></li>
+                                    </ul>
+                                </li>
                                 <a className="nav-link mx-4" href="/"><i className="fa-solid fa-cart-shopping"></i> CART</a>
                             </ul>
                         </div>

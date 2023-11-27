@@ -8,11 +8,6 @@ function Auth() {
  const [password, setPassword] = useState('');
  const [loginError, setLoginError] = useState('');
 
- const handleSubmit = (e) => {
- };
-
- const handleLogin = (e) => {
- };
 
  return (
    <>
@@ -20,7 +15,6 @@ function Auth() {
       <div className="container">
          <div className="signup-form">
             <form action="/examples/actions/confirmation.php" method="post">
-    
                <h5>Personal Information</h5>
                <hr/>
                <div className="form-group">
@@ -90,7 +84,7 @@ function Auth() {
                </select>
                <br/>
                <br/>
-               <h5>Sign-in Information</h5>
+               <h5>Sign-up Information</h5>
                <hr/>
                <div className="form-group">
                   <input type="email" className="form-control" name="email" placeholder="Email" required="required"/>
