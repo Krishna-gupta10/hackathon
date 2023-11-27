@@ -1,9 +1,27 @@
 .hover-box:hover {
-    background-color: #e5e5e5; 
+    background-color: #e5e5e5;
     color: black;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 img {
     height: 50px;
+}
+
+.bg-gray {
+    background-color: #e5e5e5;
+}
+
+.search-btn,
+.quote-btn {
+    background-color: #e16e26;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search-btn:hover,
+.quote-btn:hover {
+    background-color: white;
+    color: #e16e26;
+    outline: 1px solid#e16e26;
 }

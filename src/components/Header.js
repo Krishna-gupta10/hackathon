@@ -73,21 +73,27 @@ export default function Header() {
             </div>
 
             <div>
-                <nav className="navbar navbar-expand-lg bg-white">
+                <nav className="navbar navbar-expand-lg bg-gray" style={{ height: '130px' }}>
                     <div className="container-fluid">
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button class="btn btn-outline-success" type="submit">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+                            <form className="d-flex">
+                                <div className="input-group" style={{ backgroundColor: 'white', padding: '20px 150px' }}>
+                                    <input className="form-control mx-2" type="search" placeholder="Look for something..." aria-label="Search" style={{ border: 'none', width: '60%', outline: 'none', boxShadow: 'none' }} />
+                                    <button className="btn mx-1 search-btn" type="submit">
+                                        <i className="fa-solid fa-magnifying-glass"></i> SEARCH
+                                    </button>
+                                </div>
                             </form>
-                            <a className="nav-link mx-4" href="/">REQUEST A QUOTE</a>
+                            <a className="nav-link mx-4 quote-btn" style={{padding: '15px 15px'}} href="/">REQUEST A QUOTE</a>
                         </div>
                     </div>
                 </nav>
             </div>
+
+
         </>
     );
 }
